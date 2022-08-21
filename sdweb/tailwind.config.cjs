@@ -2,7 +2,12 @@
 module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'sos': ['Staatliches', 'sans-serif', 'Arial'],
+        'beb': ['BebasNeue', 'sans-serif', 'Arial'],
+      }
+    },
   },
   plugins: [],
 }
