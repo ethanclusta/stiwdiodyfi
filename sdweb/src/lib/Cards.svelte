@@ -22,7 +22,7 @@
 	<Card>
 		<a class="w-full h-full flex flex-col place-content-center" href="https://dx3.cymru">
 			<div class="text-5xl text-teal-600 font-bold font-beb w-full text-center">
-				Dyfi Fashion Show
+				Hwb Ffasiwn Da
 			</div>
 			<div class="text-lg w-full text-center">The sewing, fashion, up-cycling collective</div>
 		</a>

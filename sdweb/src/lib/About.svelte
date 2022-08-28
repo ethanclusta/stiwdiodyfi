@@ -4,33 +4,68 @@
 	import PAVO from '$lib/assets/partners/PAVO.png';
 	import Powys from '$lib/assets/partners/PowysCouncil.png';
 	import UKGov from '$lib/assets/partners/UKGov.png';
+	import Vis from '$lib/assets/partners/VisImpact.png';
+	import Vid from '$lib/assets/partners/Videndum.png';
+
+	import { db } from '../config/firebase';
+	import { doc, setDoc } from 'firebase/firestore';
+
+	export let email = '';
+
+	let loading = false;
+	let success = false;
+
+	const add = async () => {
+		loading = true;
+		await setDoc(doc(db, 'signups', email), {
+			email: email,
+			source: 'Stiwdio Dyfi',
+			createDate: Date.now()
+		}).then(() => {
+			loading = false;
+			success = true;
+		});
+	};
+
+	const subscribe = () => {
+		if (email.length > 0 && email.length < 50) {
+			add();
+		}
+	};
 </script>
 
 <div class="px-5 flex flex-col lg:flex-row gap-3">
 	<div class="bg-gray-100 p-3 w-full lg:w-1/2 flex flex-col gap-y-3 text-sm">
 		<h1 class="text-[#D32D7D] font-bold text-3xl">About</h1>
-		<p class="text-lg font-semibold">
-			Stiwdio Dyfi represents the first small steps in a large ambition: to instigate and sustain a
-			film and media industry in the Dyfi Biosphere.
+		<p class="text-base font-semibold">
+			Stiwdio Dyfi is a studio collective based in the the Dyfi area in mid-Wales.
 		</p>
 		<p>
-			Stiwdio Dyfi CIC is a regeneration project operating within the UNESCO Dyfi Biosphere area in
-			Mid-West Wales, with a studio facility at Y Plas, Machynlleth.
+			We are artists, writers, community workers, entrepreneurs, organisers, environmentalists,
+			farmers, academics, craftspeople, engineers and much much more.
 		</p>
 		<p>
-			We have an ethos of inclusion, accessibility and sustainability outlined in our CIC36
-			manifesto.
+			We are a community interest company and are run by local people for the benefit of local
+			people.
+		</p>
+		<p>How do I get involved?</p>
+		<p>
+			<span class="text-base font-semibold">Participate</span><br />
+			Come to our events, workshops and tune into our online channels.
 		</p>
 		<p>
-			Stiwdio Dyfi was set up to give the local economy a boost through providing cultural spaces
-			and outlets that complement existing infrastructure and enterprise.
+			<span class="text-base font-semibold">Volunteer</span><br />
+			Get stuck in, meet new people, make new friends and learn new skills.
 		</p>
 		<p>
-			Our aim is to initiate and facilitate creative spaces and outlets to enhance creative economy
-			opportunity in the Dyfi Biosphere.
+			<span class="text-base font-semibold">Work</span><br />
+			Get paid to be a workshop leader, events organiser or facility/project manager + more
 		</p>
 		<p>
-			William Tremlett is the Project Manager and you can contact him here: stiwdiodyfi@gmail.com
+			<span class="text-base font-semibold">Join</span><br />
+			As a member: Members play an important role in making sure the local communities are able to influence
+			and help our directors make the right decisions. Members will be invited to our quarterly steering
+			committee meetings.
 		</p>
 	</div>
 	<div class="w-full lg:w-1/2 flex flex-col gap-y-3 text-sm">
@@ -42,23 +77,44 @@
 				Hopefully we will see you there!
 			</p>
 			<p>Sign up for weekly updates here:</p>
-			<div class="flex">
-				<input
-					type="text"
-					placeholder="Your email"
-					class="p-2 border w-2/3 lg:w-1/2 outline-none rounded-l-md border-[#D32D7D]"
-				/>
-				<button class="bg-[#D32D7D] text-white rounded-r-md p-2">Subscribe</button>
-			</div>
+			{#if !success}
+				<div class="flex">
+					<input
+						type="text"
+						bind:value={email}
+						placeholder="Your email"
+						class="p-2 border w-2/3 lg:w-1/2 outline-none rounded-l-md border-[#D32D7D]"
+					/>
+					{#if !loading}
+						<button on:click={subscribe} class="bg-[#D32D7D] text-white rounded-r-md p-2"
+							>Subscribe</button
+						>
+					{:else}
+						<button class="bg-[#D32D7D] text-white rounded-r-md p-2">loading...</button>
+					{/if}
+				</div>
+			{:else}
+				<div>
+					<span class="p-2 bg-[#D32D7D] text-white rounded-md">You're subscribed, thanks!</span>
+				</div>
+			{/if}
 		</div>
 		<div class="bg-gray-100 p-3 w-full flex flex-col gap-y-3">
 			<h1 class="text-[#D32D7D] font-bold text-3xl">Our partners</h1>
 			<p>Stiwdio Dyfi has received funding and support from the following:</p>
-			<div class="flex flex-col md:flex-row lg:flex-col xl:flex-row gap-2 mt-2">
+			<div class="flex flex-col md:flex-row lg:flex-col xl:flex-row flex-wrap gap-2 mt-2">
+				<div class="flex gap-2">
+					<div class="flex place-content-center h-16">
+						<img class="h-full" alt="Lottery" src={UKGov} />
+					</div>
+					<div class="flex h-16">
+						<img class="h-full" alt="Lottery" src={Powys} />
+					</div>
+				</div>
 				<div class="flex gap-2">
 					<div class="flex h-16 place-content-center">
 						<img class="h-full" alt="Lottery" src={Lottery} />
-                    </div>
+					</div>
 					<div class="flex place-content-center h-16">
 						<img class="h-full" alt="Lottery" src={MTC} />
 					</div>
@@ -68,10 +124,10 @@
 				</div>
 				<div class="flex gap-2">
 					<div class="flex place-content-center h-16">
-						<img class="h-full" alt="Lottery" src={UKGov} />
+						<img class="h-full" alt="Lottery" src={Vis} />
 					</div>
 					<div class="flex h-16">
-						<img class="h-full" alt="Lottery" src={Powys} />
+						<img class="h-full" alt="Lottery" src={Vid} />
 					</div>
 				</div>
 			</div>
