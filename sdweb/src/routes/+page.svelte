@@ -19,15 +19,15 @@
 		<div class="bg-zinc-100 flex flex-col gap-2 p-6 h-fit">
 			<h1 class="font-beb text-5xl text-center text-teal-600">HWB FFASIWN DA</h1>
 			<p>
-				The fast fashion industry is amongst the second biggest manufacturing polluter with one
-				cotton T Shirt using 2,700 litres of water to make, and run off chemicals from factories
-				having devastating impact on human and none human life. What makes this worse is that the
+				The fast fashion industry is amongst the biggest manufacturing polluters in the world. One
+				cotton T-shirt requires 2,700 litres of water to be made and run off chemicals from factories
+				have a devastating impact on human and non-human life. What makes this worse is that the
 				this is happening in some of the poorest parts of the world with little or no support for
-				those effected by the pollution.
+				those affected by the pollution.
 			</p>
 			<p>
-				The issue is too big for any individual to fix, the only solution is a collective one. This
-				is the driving mentality behind Hwb Ffasiwn Da which a community driven fashion project
+				The issue is too big for any individual to fix alone, the only solution is a collective one. This
+				is the driving mentality behind Hwb Ffasiwn Da, a community-driven fashion project
 				based in Machynlleth, Wales. The hwb is about developing a local textiles industry where
 				collective working is the game and collaborations are the style. This Calan Geaf is the
 				hwb's first attempt at a runway show so make sure to check it out!
