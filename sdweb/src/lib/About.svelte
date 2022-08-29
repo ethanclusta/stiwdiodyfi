@@ -1,13 +1,13 @@
 <script>
-	import Lottery from '$lib/assets/partners/Lottery.png';
-	import MTC from '$lib/assets/partners/MachCouncil.png';
-	import PAVO from '$lib/assets/partners/PAVO.png';
-	import Powys from '$lib/assets/partners/PowysCouncil.png';
-	import UKGov from '$lib/assets/partners/UKGov.png';
-	import Vis from '$lib/assets/partners/VisImpact.png';
-	import Vid from '$lib/assets/partners/Videndum.png';
-	import BFILot from '$lib/assets/partners/BFILOT.png';
-    import C4A from '$lib/assets/partners/CIN4ALL.png';
+	// import Lottery from '/partners/Lottery.png';
+	// import MTC from '/partners/MachCouncil.png';
+	// import PAVO from '/partners/PAVO.png';
+	// import Powys from '/partners/PowysCouncil.png';
+	// import UKGov from '/partners/UKGov.png';
+	// import Vis from '/partners/VisImpact.png';
+	// import Vid from '/partners/Videndum.png';
+	// import BFILot from '/partners/BFILOT.png';
+    // import C4A from '/partners/CIN4ALL.png';
 
 	import { db } from '../config/firebase';
 	import { doc, setDoc } from 'firebase/firestore';
@@ -117,31 +117,31 @@
 			<div class="flex flex-col md:flex-row lg:flex-col xl:flex-row flex-wrap gap-2 mt-2">
 				<div class="flex gap-2 flex-wrap">
 					<div class="flex place-content-center h-16">
-						<img class="h-full" alt="Lottery" src={UKGov} />
+						<img class="h-full" alt="Lottery" src='/partners/UKGOV.png' />
 					</div>
 					<div class="flex h-16">
-						<img class="h-full" alt="Lottery" src={Powys} />
+						<img class="h-full" alt="Lottery" src='/partners/PowysCouncil.png' />
 					</div>
 					<div class="flex h-16 place-content-center">
-						<img class="h-full" alt="Lottery" src={Lottery} />
+						<img class="h-full" alt="Lottery" src="/partners/Lottery.png" />
 					</div>
 					<div class="flex place-content-center h-16">
-						<img class="h-full" alt="Lottery" src={MTC} />
+						<img class="h-full" alt="Lottery" src='/partners/MachCouncil.png' />
 					</div>
 					<div class="flex place-content-center h-16">
-						<img class="h-full" alt="Lottery" src={PAVO} />
+						<img class="h-full" alt="Lottery" src='/partners/PAVO.png' />
 					</div>
 					<div class="flex place-content-center h-16">
-						<img class="h-full" alt="Lottery" src={Vis} />
+						<img class="h-full" alt="Lottery" src='/partners/VisImpact.png' />
 					</div>
 					<div class="flex h-16">
-						<img class="h-full" alt="Lottery" src={Vid} />
+						<img class="h-full" alt="Lottery" src='/partners/Videndum.png' />
 					</div>
 					<div class="flex h-16">
-						<img class="h-full" alt="Lottery" src={C4A} />
+						<img class="h-full" alt="Lottery" src='/partners/CIN4ALL.png' />
 					</div>
 					<div class="flex h-16">
-						<img class="h-full" alt="Lottery" src={BFILot} />
+						<img class="h-full" alt="Lottery" src='/partners/BFILOT.png' />
 					</div>
 				</div>
 			</div>
