@@ -6,6 +6,8 @@
 	import UKGov from '$lib/assets/partners/UKGov.png';
 	import Vis from '$lib/assets/partners/VisImpact.png';
 	import Vid from '$lib/assets/partners/Videndum.png';
+	import BFILot from '$lib/assets/partners/BFILOT.png';
+    import C4A from '$lib/assets/partners/CIN4ALL.png';
 
 	import { db } from '../config/firebase';
 	import { doc, setDoc } from 'firebase/firestore';
@@ -35,7 +37,7 @@
 </script>
 
 <div class="px-5 flex flex-col lg:flex-row gap-3">
-	<div class="bg-gray-100 p-3 w-full lg:w-1/2 flex flex-col gap-y-3 text-sm">
+	<div class="bg-gray-100 p-3 w-full lg:w-1/2 flex flex-col gap-y-3 text-sm h-fit">
 		<h1 class="text-[#D32D7D] font-bold text-3xl">About</h1>
 		<p class="text-base font-semibold">
 			Stiwdio Dyfi is a studio collective based in the the Dyfi area in mid-Wales.
@@ -67,51 +69,59 @@
 			and help our directors make the right decisions. Members will be invited to our quarterly steering
 			committee meetings.
 		</p>
+		<hr class="opacity-90" />
+		<p class="text-[0.7rem] text-slate-700">
+			Stiwdio Dyfi CIC.<br>Company No
+			13843739 registered in England and Wales<br>205 Y Plas Aberystwyth Road Machynlleth Powys SY20 8ER
+			United Kingdom<br>stiwdiodyfi@gmail.com
+		</p>
 	</div>
 	<div class="w-full lg:w-1/2 flex flex-col gap-y-3 text-sm">
 		<div class="bg-gray-100 p-3 w-full flex flex-col gap-y-3">
 			<h1 class="text-[#D32D7D] font-bold text-3xl">Connect with us</h1>
-			<p>See our launch publication here.</p>
+			<!-- <p>See our launch publication here.</p> -->
 			<p>
 				Find our stall at Machynlleth Market every Wednesday to pick up a flyer for the next 7 days.
 				Hopefully we will see you there!
 			</p>
 			<p>Sign up for weekly updates here:</p>
-			{#if !success}
-				<div class="flex">
-					<input
-						type="text"
-						bind:value={email}
-						placeholder="Your email"
-						class="p-2 border w-2/3 lg:w-1/2 outline-none rounded-l-md border-[#D32D7D]"
-					/>
-					{#if !loading}
-						<button on:click={subscribe} class="bg-[#D32D7D] text-white rounded-r-md p-2"
-							>Subscribe</button
+			<div class="h-12">
+				{#if !success}
+					<div class="flex">
+						<input
+							type="text"
+							bind:value={email}
+							placeholder="Your email"
+							class="p-2 border w-2/3 lg:w-1/2 outline-none rounded-l-md border-[#D32D7D]"
+						/>
+						{#if !loading}
+							<button on:click={subscribe} class="bg-[#D32D7D] text-white rounded-r-md p-2"
+								>Subscribe</button
+							>
+						{:else}
+							<button class="bg-[#D32D7D] text-white rounded-r-md p-2">loading...</button>
+						{/if}
+					</div>
+				{:else}
+					<div class="mt-2">
+						<span class="p-2 bg-[#D32D7D] text-white rounded-md border border-[#D32D7D]"
+							>You're subscribed, thanks!</span
 						>
-					{:else}
-						<button class="bg-[#D32D7D] text-white rounded-r-md p-2">loading...</button>
-					{/if}
-				</div>
-			{:else}
-				<div>
-					<span class="p-2 bg-[#D32D7D] text-white rounded-md">You're subscribed, thanks!</span>
-				</div>
-			{/if}
+					</div>
+				{/if}
+			</div>
 		</div>
 		<div class="bg-gray-100 p-3 w-full flex flex-col gap-y-3">
 			<h1 class="text-[#D32D7D] font-bold text-3xl">Our partners</h1>
 			<p>Stiwdio Dyfi has received funding and support from the following:</p>
 			<div class="flex flex-col md:flex-row lg:flex-col xl:flex-row flex-wrap gap-2 mt-2">
-				<div class="flex gap-2">
+				<div class="flex gap-2 flex-wrap">
 					<div class="flex place-content-center h-16">
 						<img class="h-full" alt="Lottery" src={UKGov} />
 					</div>
 					<div class="flex h-16">
 						<img class="h-full" alt="Lottery" src={Powys} />
 					</div>
-				</div>
-				<div class="flex gap-2">
 					<div class="flex h-16 place-content-center">
 						<img class="h-full" alt="Lottery" src={Lottery} />
 					</div>
@@ -121,13 +131,17 @@
 					<div class="flex place-content-center h-16">
 						<img class="h-full" alt="Lottery" src={PAVO} />
 					</div>
-				</div>
-				<div class="flex gap-2">
 					<div class="flex place-content-center h-16">
 						<img class="h-full" alt="Lottery" src={Vis} />
 					</div>
 					<div class="flex h-16">
 						<img class="h-full" alt="Lottery" src={Vid} />
+					</div>
+					<div class="flex h-16">
+						<img class="h-full" alt="Lottery" src={C4A} />
+					</div>
+					<div class="flex h-16">
+						<img class="h-full" alt="Lottery" src={BFILot} />
 					</div>
 				</div>
 			</div>
