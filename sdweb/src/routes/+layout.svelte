@@ -4,7 +4,7 @@
 
 <body style="background: #D32D7D;">
 	<div class="relative h-full w-full">
-		<div class="bg-[#D32D7D] p-4 lg:p-12">
+		<div class="bg-[#D32D7D] p-4 pb-8 lg:p-12">
 			<div class="bg-white w-full flex flex-col gap-y-5 pb-5">
 				<slot />
 			</div>
