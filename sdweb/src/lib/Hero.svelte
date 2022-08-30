@@ -3,5 +3,5 @@
 </script>
 
 <div class="w-full flex place-content-center h[20rem] md:h-[30rem]">
-    <img alt="logo" src={Logo} />
+    <img class="w-full md:w-[42rem]" alt="logo" src={Logo} />
 </div>
