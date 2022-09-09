@@ -1,14 +1,4 @@
 <script>
-	// import Lottery from '/partners/Lottery.png';
-	// import MTC from '/partners/MachCouncil.png';
-	// import PAVO from '/partners/PAVO.png';
-	// import Powys from '/partners/PowysCouncil.png';
-	// import UKGov from '/partners/UKGov.png';
-	// import Vis from '/partners/VisImpact.png';
-	// import Vid from '/partners/Videndum.png';
-	// import BFILot from '/partners/BFILOT.png';
-    // import C4A from '/partners/CIN4ALL.png';
-
 	import { db } from '../config/firebase';
 	import { doc, setDoc } from 'firebase/firestore';
 

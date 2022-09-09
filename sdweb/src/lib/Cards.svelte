@@ -4,14 +4,14 @@
 
 <div class="flex flex-col place-content-center lg:flex-row gap-3 px-5">
 	<Card>
-		<div id="dx3" on:click class="w-full h-full flex flex-col place-content-center">
+		<a href="https://www.dx3.cymru" class="w-full h-full flex flex-col place-content-center">
 			<div class="text-5xl font-bold w-full text-center">
 				<span class="bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-transparent"
 					>DX3</span
 				>
 			</div>
 			<div class="text-lg w-full text-center">Internet radio and TV station</div>
-		</div>
+		</a>
 	</Card>
 	<Card>
 		<a class="w-full h-full flex flex-col place-content-center" href="https://www.soscochsinema.org">
