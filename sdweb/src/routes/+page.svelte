@@ -43,10 +43,15 @@
 					where collective working is the game and collaborations are the style. This Calan Geaf is
 					the hwb's first attempt at a runway show so make sure to check it out!
 				</p>
-				<p>
-					Keep up to date with Hwb Ffasiwn Da and find out more about getting involved by signing up
-					to our weekly email newsletter below.
-				</p>
+				<div class="flex place-content-center">
+					<a
+						class="bg-teal-600 text-white w-fit text-center p-3"
+						href="https://us14.list-manage.com/survey?u=c288709774c96731a04d21fa6&id=191e3d522e&e=0e0db13506"
+						target="_blank"
+					>
+						Sign up for Hwb Ffasiwn Da's workshops
+					</a>
+				</div>
 			{:else}
 				<h1
 					class="text-center font-bold text-3xl lg:text-5xl bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-transparent"
@@ -55,20 +60,18 @@
 				</h1>
 				<p>
 					What does community a community broadcast station look like? Well in Wales it looks like
-					dx3.cymru… 
+					dx3.cymru…
 				</p>
 				<p>
-					Digidol Dyfi Digital or DX3 for short is an internet radio and TV station based
-					in the Dyfi Biosphere, southern Snowdonia. It has grown out of the work of numerous
-					individuals who have come together under the banner of DX3 to facilitate an audience
-					facing outlet for audio visual artists in the Dyfi. To make the project accessible to all
-					DX3 runs digital skills workshops and has an arsenal or camera, audio and computing
-					equipment power that anyone can use once inducted by experienced practitioners. Stay tuned
-					for the DX3 label on Bandcamp launching this Calan Geaf.
+					Digidol Dyfi Digital or DX3 for short is an internet radio and TV station based in the
+					Dyfi Biosphere, southern Snowdonia. It has grown out of the work of numerous individuals
+					who have come together under the banner of DX3 to facilitate an audience facing outlet for
+					audio visual artists in the Dyfi. To make the project accessible to all DX3 runs digital
+					skills workshops and has an arsenal or camera, audio and computing equipment power that
+					anyone can use once inducted by experienced practitioners. Stay tuned for the DX3 label on
+					Bandcamp launching this Calan Geaf.
 				</p>
-				<p>
-					Website coming soon...
-				</p>
+				<p>Website coming soon...</p>
 			{/if}
 		</div>
 	</div>
