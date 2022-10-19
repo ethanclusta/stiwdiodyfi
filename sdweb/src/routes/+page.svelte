@@ -36,20 +36,24 @@
 			{#if content === 'hwb'}
 				<h1 class="font-beb text-3xl lg:text-5xl text-center text-teal-600">HWB FFASIWN DA</h1>
 				<p>
-					The fast fashion industry is amongst the biggest manufacturing polluters in the world. One
-					cotton T-shirt requires 2,700 litres of water to be made and run off chemicals from
-					factories have a devastating impact on human and non-human life. What makes this worse is
-					that the this is happening in some of the poorest parts of the world with little or no
-					support for those affected by the pollution.
+					Hwb Ffasiwn Da present the Sioe Calan Gaeaf. Dyfi's first industry event for fashion. The
+					aim of the show is to bring together the many talented textiles industry workers in the
+					Dyfi for a single evening of serious fashion fun.
 				</p>
-				<p>
+				<p class="font-bold">Sioe Calan Gaeaf: Thu 27th Oct</p>
+				<p class="font-bold">Vane Tempest Room, Y Plas, Machynlleth, SY208ER</p>
+				<p class="italic">
+					'Invitation Only' event (enquiries stiwdiodyfi@gmail.com) (a video recording of the show
+					will be made available on Youtube following the event)
+				</p>
+				<!-- <p>
 					The issue is too big for any individual to fix alone, the only solution is a collective
 					one. This is the driving mentality behind Hwb Ffasiwn Da, a community-driven fashion
 					project based in Machynlleth, Wales. The hwb is about developing a local textiles industry
 					where collective working is the game and collaborations are the style. This Calan Geaf is
 					the hwb's first attempt at a runway show so make sure to check it out!
-				</p>
-				<div class="flex place-content-center">
+				</p> -->
+				<!-- <div class="flex place-content-center">
 					<a
 						class="bg-teal-600 text-white w-fit text-center p-3"
 						href="https://us14.list-manage.com/survey?u=c288709774c96731a04d21fa6&id=191e3d522e&e=0e0db13506"
@@ -57,7 +61,7 @@
 					>
 						Sign up for Hwb Ffasiwn Da's workshops
 					</a>
-				</div>
+				</div> -->
 			{:else if content === 'dx3'}
 				<h1
 					class="text-center font-bold text-3xl lg:text-5xl bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-transparent"
@@ -79,25 +83,27 @@
 				</p>
 				<p>Website coming soon...</p>
 			{:else}
-			<div class="bg-[#D32D7D] w-full h-full flex flex-col gap-2 p-6 text-sm lg:text-base text-white">
-				<h1 class="text-center font-bold text-xl lg:text-xl">
-					Be in the draw to win 4 x cinema tickets with complimentary drinks + a £25 gift voucher to
-					Dyfi Wholefoods.
-				</h1>
-				<h1 class="text-center font-bold text-xl lg:text-xl">
-					Bod yn yr cystadleuaeth i ennill 4 x tocunnau sinema hefo diodydd + tocyn anrheg i Dyfi
-					Wholewoods gweth £25.
-				</h1>
-				<p class="text-center ">We'd welcome your thoughts on local arts provision</p>
-				<p class="text-center ">Byddwn yn croesawu eich barn ar meddyliau ar celf lleol</p>
-				<div class="flex place-content-center">
-					<a
-						href="https://us14.list-manage.com/survey?u=c288709774c96731a04d21fa6&id=5a087b5638&attribution=false"
-						target="_blank"
-						class="p-3 bg-zinc-100 text-black font-bold">Complete our survey</a
-					>
+				<div
+					class="bg-[#D32D7D] w-full h-full flex flex-col gap-2 p-6 text-sm lg:text-base text-white"
+				>
+					<h1 class="text-center font-bold text-xl lg:text-xl">
+						Be in the draw to win 4 x cinema tickets with complimentary drinks + a £25 gift voucher
+						to Dyfi Wholefoods.
+					</h1>
+					<h1 class="text-center font-bold text-xl lg:text-xl">
+						Bod yn yr cystadleuaeth i ennill 4 x tocunnau sinema hefo diodydd + tocyn anrheg i Dyfi
+						Wholewoods gweth £25.
+					</h1>
+					<p class="text-center ">We'd welcome your thoughts on local arts provision</p>
+					<p class="text-center ">Byddwn yn croesawu eich barn ar meddyliau ar celf lleol</p>
+					<div class="flex place-content-center">
+						<a
+							href="https://us14.list-manage.com/survey?u=c288709774c96731a04d21fa6&id=5a087b5638&attribution=false"
+							target="_blank"
+							class="p-3 bg-zinc-100 text-black font-bold">Complete our survey</a
+						>
+					</div>
 				</div>
-			</div>
 			{/if}
 		</div>
 	</div>
