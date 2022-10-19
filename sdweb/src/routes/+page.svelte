@@ -94,7 +94,7 @@
 						Bod yn yr cystadleuaeth i ennill 4 x tocunnau sinema hefo diodydd + tocyn anrheg i Dyfi
 						Wholewoods gweth £25.
 					</h1>
-					<p class="text-center ">We'd welcome your thoughts on local arts provision</p>
+					<p class="text-center ">We'd welcome your thoughts on local arts</p>
 					<p class="text-center ">Byddwn yn croesawu eich barn ar meddyliau ar celf lleol</p>
 					<div class="flex place-content-center">
 						<a
