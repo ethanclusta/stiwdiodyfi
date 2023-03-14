@@ -15,11 +15,11 @@
 	}
 </script>
 
-<div class="w-full flex flex-row justify-between">
+<div class="w-full flex flex-row justify-between p-3">
 	<a href="/">
 		<img class="h-16 object-contain" src={Logo} alt="Stiwdio Dyfi" />
 	</a>
-	<div class="flex flex-row gap-x-5 p-4 text-xl md:text-2xl">
+	<div class="flex flex-row gap-x-5 py-4 text-xl md:text-2xl">
 		<div class="relative">
 			<div on:click={toggleDrop} class="cursor-pointer hover:underline">PROJECTS</div>
 			{#if drop}

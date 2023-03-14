@@ -6,7 +6,7 @@
 
 <body class="bg-white">
 	<div class="relative h-full w-full mb-12">
-		<div class="p-4 pb-8">
+		<div class="pb-8">
 			<div class="bg-white w-full flex flex-col gap-y-5">
 				<Nav />
 				<slot />
