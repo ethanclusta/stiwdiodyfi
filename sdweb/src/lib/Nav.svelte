@@ -8,21 +8,26 @@
 		drop = !drop;
 		return;
 	};
+
+	const hideDrop = () => {
+		drop = false;
+		return;
+	}
 </script>
 
 <div class="w-full flex flex-row justify-between">
 	<a href="/">
-		<img class="h-16" src={Logo} alt="Stiwdio Dyfi" />
+		<img class="h-16 object-contain" src={Logo} alt="Stiwdio Dyfi" />
 	</a>
-	<div class="flex flex-row gap-x-5 p-4 text-2xl">
+	<div class="flex flex-row gap-x-5 p-4 text-xl md:text-2xl">
 		<div class="relative">
 			<div on:click={toggleDrop} class="cursor-pointer hover:underline">PROJECTS</div>
 			{#if drop}
-				<Dropdown />
+				<Dropdown hideFunc={hideDrop} />
 			{/if}
 		</div>
 		<div class="cursor-pointer hover:underline">ABOUT</div>
-		<div class="cursor-pointer hover:underline">CONTACT</div>
+		<a href="/contact" class="cursor-pointer hover:underline">CONTACT</a>
 	</div>
-	<img class="h-16 opacity-0" src={Logo} alt="Stiwdio Dyfi" />
+	<img class="h-16 opacity-0 hidden md:block" src={Logo} alt="Stiwdio Dyfi" />
 </div>

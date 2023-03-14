@@ -1,6 +1,8 @@
 <script>
 	import SubDropdown from './SubDropdown.svelte';
 
+	export let hideFunc;
+
 	let option = '';
 
 	const toggleExtra = (e) => {
@@ -82,7 +84,7 @@
 			LIVE
 		</div>
 		{#if option === 'live'}
-			<SubDropdown items={liveProjs} />
+			<SubDropdown items={liveProjs} hideFunc={hideFunc} />
 		{/if}
 		<div
 			on:click={toggleExtra}
@@ -92,7 +94,7 @@
 			IN DEVELOPMENT
 		</div>
 		{#if option === 'indev'}
-			<SubDropdown items={devProjs} />
+			<SubDropdown items={devProjs} hideFunc={hideFunc} />
 		{/if}
 		<div
 			on:click={toggleExtra}
@@ -102,7 +104,7 @@
 			ARCHIVE
 		</div>
 		{#if option === 'arch'}
-			<SubDropdown items={archProjs} />
+			<SubDropdown items={archProjs} hideFunc={hideFunc} />
 		{/if}
 	</div>
 </div>
