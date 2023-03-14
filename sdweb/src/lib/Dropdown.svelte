@@ -14,6 +14,55 @@
 			option = 'live';
 		}
 	};
+
+	const liveProjs = [
+		{
+			title: 'RADIO DYFI',
+			tag: 'radiodyfi'
+		},
+		{
+			title: 'SÔS COCH SINEMA',
+			tag: 'soscochsinema'
+		},
+	]
+
+	const devProjs = [
+		{
+			title: 'MID WALES FILM UNIT',
+			tag: 'midwalesfilmunit'
+		},
+		{
+			title: 'TRYDAN RECORDS',
+			tag: 'trydanrecords'
+		},
+		{
+			title: 'DYFI FILM FESTIVAL',
+			tag: 'dyfifilmfestival'
+		},
+		{
+			title: 'DYFI FASHION WEEK',
+			tag: 'dyfifashionweek'
+		},
+		{
+			title: 'CYW DYFI',
+			tag: 'cywdyfi'
+		},
+	]
+
+	const archProjs = [
+		{
+			title: 'HWB FFASIWN DA',
+			tag: 'hwbffasiwnda'
+		},
+		{
+			title: 'DYFI FILM SCHOOL',
+			tag: 'dyfifilmschool'
+		},
+		{
+			title: 'DIGIDOL DYFI DIGITAL',
+			tag: 'digidoldyfidigital'
+		},
+	]
 </script>
 
 <div
@@ -33,7 +82,7 @@
 			LIVE
 		</div>
 		{#if option === 'live'}
-			<SubDropdown items={['DIGIDOL DYFI DIGITAL', 'DYFI FILM SCHOOL']} />
+			<SubDropdown items={liveProjs} />
 		{/if}
 		<div
 			on:click={toggleExtra}
@@ -43,7 +92,7 @@
 			IN DEVELOPMENT
 		</div>
 		{#if option === 'indev'}
-			<SubDropdown items={['DIGIDOL DYFI DIGITAL', 'DYFI FILM SCHOOL']} />
+			<SubDropdown items={devProjs} />
 		{/if}
 		<div
 			on:click={toggleExtra}
@@ -53,7 +102,7 @@
 			ARCHIVE
 		</div>
 		{#if option === 'arch'}
-			<SubDropdown items={['DIGIDOL DYFI DIGITAL', 'DYFI FILM SCHOOL']} />
+			<SubDropdown items={archProjs} />
 		{/if}
 	</div>
 </div>

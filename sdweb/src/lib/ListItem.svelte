@@ -17,6 +17,6 @@
         <!-- <div class="text-sm">{displayDate}</div> -->
         <div class="text-3xl">{item.title}</div>
         <div class="text-sm text-gray-700">{displayDate}</div>
-        <div>{item.excerpt}</div>
+        <div>{item.excerpt}...</div>
     </div>
 </a>
