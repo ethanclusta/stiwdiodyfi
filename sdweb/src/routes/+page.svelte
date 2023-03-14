@@ -1,8 +1,13 @@
 <script>
-	import { onMount } from 'svelte';
-	import About from '../lib/About.svelte';
-	import Cards from '../lib/Cards.svelte';
-	import Hero from '../lib/Hero.svelte';
+	// import { onMount } from 'svelte';
+	// import About from '../lib/About.svelte';
+	// import Cards from '../lib/Cards.svelte';
+	// import Hero from '../lib/Hero.svelte';
+
+	import List from '../lib/List.svelte';
+
+	/** @type {import('./$types').PageData} */
+	export let data;
 
 	let modal = false;
 	let content = '';
@@ -18,15 +23,19 @@
 		return;
 	};
 
-	onMount(() => {
-		modal = true;
-		content = 'survey';
-	});
+	// onMount(() => {
+	// 	modal = true;
+	// 	content = 'survey';
+	// });
 </script>
 
-<Hero />
+<!-- <Hero />
 <Cards on:click={toggleModal} />
-<About />
+<About /> -->
+
+<List data={data.posts} title={'LATEST NEWS'} />
+
+
 {#if modal}
 	<div
 		on:click={toggleModal}
