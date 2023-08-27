@@ -11,7 +11,7 @@
 
 <a href="/news/{item.id}" class="flex flex-col lg:flex-row gap-3 relative w-full p-5">
     <div class="relative w-full lg:w-1/2 flex place-content-center">
-        <img class="object-scale-down max-h-72" src={item.feature_image} alt="feature" />
+        <img class="aspect-video object-cover max-h-72" src={item.feature_image} alt="feature" />
     </div>
     <div class="flex flex-col gap-3 w-full lg:w-1/2 justify-center">
         <!-- <div class="text-sm">{displayDate}</div> -->
