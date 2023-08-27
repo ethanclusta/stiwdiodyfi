@@ -8,7 +8,7 @@ const key = get(apiKey);
 /** @type {import('./$types').PageServerLoad} */
 export function load() {
     async function getPost() {
-		const res = await fetch(url + key + '&filter=tag:sd-advisor');
+		const res = await fetch(url + key + '&filter=tag:sd-advisor&limit=all&order=published_at%20asc');
 		const resJson = await res.json();
 		const posts = resJson;
 

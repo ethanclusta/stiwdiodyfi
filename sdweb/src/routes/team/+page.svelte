@@ -7,7 +7,7 @@
     data = data.reverse()
 </script>
 
-<div class="py-0">
+<div class="py-0 mb-5">
 	<div class="text-4xl md:text-6xl font-bold text-white bg-black xl:px-16 py-1 text-center">
 		OUR TEAM
 	</div>
