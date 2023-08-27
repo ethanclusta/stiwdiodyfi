@@ -1,5 +1,5 @@
 import { error } from '@sveltejs/kit';
-import { apiKey, apiUrl } from './stores';
+import { apiKey, apiUrl } from '../stores';
 import { get } from 'svelte/store';
 
 const url = get(apiUrl);
@@ -8,7 +8,7 @@ const key = get(apiKey);
 /** @type {import('./$types').PageServerLoad} */
 export function load() {
     async function getPost() {
-		const res = await fetch(url + key + '&filter=tag:sd-news');
+		const res = await fetch(url + key + '&filter=tag:sd-advisor');
 		const resJson = await res.json();
 		const posts = resJson;
 
