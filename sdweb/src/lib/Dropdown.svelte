@@ -23,33 +23,41 @@
 			tag: 'radiodyfi'
 		},
 		{
-			title: 'SÔS COCH SINEMA',
-			tag: 'soscochsinema'
+			title: 'CONSULTATION',
+			tag: 'consultation'
 		},
+		{
+			title: 'FILM COOP CYMRU',
+			tag: 'film-coop-cymru'
+		},
+		// {
+		// 	title: 'SÔS COCH SINEMA',
+		// 	tag: 'soscochsinema'
+		// },
 	]
 
-	const devProjs = [
-		{
-			title: 'MID WALES FILM UNIT',
-			tag: 'midwalesfilmunit'
-		},
-		{
-			title: 'TRYDAN RECORDS',
-			tag: 'trydanrecords'
-		},
-		{
-			title: 'DYFI FILM FESTIVAL',
-			tag: 'dyfifilmfestival'
-		},
-		{
-			title: 'DYFI FASHION WEEK',
-			tag: 'dyfifashionweek'
-		},
-		{
-			title: 'CYW DYFI',
-			tag: 'cywdyfi'
-		},
-	]
+	// const devProjs = [
+	// 	{
+	// 		title: 'MID WALES FILM UNIT',
+	// 		tag: 'midwalesfilmunit'
+	// 	},
+	// 	{
+	// 		title: 'TRYDAN RECORDS',
+	// 		tag: 'trydanrecords'
+	// 	},
+	// 	{
+	// 		title: 'DYFI FILM FESTIVAL',
+	// 		tag: 'dyfifilmfestival'
+	// 	},
+	// 	{
+	// 		title: 'DYFI FASHION WEEK',
+	// 		tag: 'dyfifashionweek'
+	// 	},
+	// 	{
+	// 		title: 'CYW DYFI',
+	// 		tag: 'cywdyfi'
+	// 	},
+	// ]
 
 	const archProjs = [
 		{
@@ -57,13 +65,21 @@
 			tag: 'hwbffasiwnda'
 		},
 		{
-			title: 'DYFI FILM SCHOOL',
-			tag: 'dyfifilmschool'
+			title: 'SÔS COCH SINEMA',
+			tag: 'soscochsinema'
 		},
 		{
-			title: 'DIGIDOL DYFI DIGITAL',
-			tag: 'digidoldyfidigital'
+			title: 'MACHYNLLETH YOUTH CLUB',
+			tag: 'machynlleth-youth-club'
 		},
+		// {
+		// 	title: 'DYFI FILM SCHOOL',
+		// 	tag: 'dyfifilmschool'
+		// },
+		// {
+		// 	title: 'DIGIDOL DYFI DIGITAL',
+		// 	tag: 'digidoldyfidigital'
+		// },
 	]
 </script>
 
@@ -81,12 +97,12 @@
 			id="live"
 			class="cursor-pointer hover:underline block px-4 py-2 text-sm"
 		>
-			LIVE
+			CURRENT
 		</div>
 		{#if option === 'live'}
 			<SubDropdown items={liveProjs} hideFunc={hideFunc} />
 		{/if}
-		<div
+		<!-- <div
 			on:click={toggleExtra}
 			id="indev"
 			class="cursor-pointer hover:underline block px-4 py-2 text-sm"
@@ -95,7 +111,7 @@
 		</div>
 		{#if option === 'indev'}
 			<SubDropdown items={devProjs} hideFunc={hideFunc} />
-		{/if}
+		{/if} -->
 		<div
 			on:click={toggleExtra}
 			id="arch"

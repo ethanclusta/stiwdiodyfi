@@ -26,7 +26,7 @@
 				<Dropdown hideFunc={hideDrop} />
 			{/if}
 		</div>
-		<div class="cursor-pointer hover:underline">ABOUT</div>
+		<a href="/about" class="cursor-pointer hover:underline">ABOUT</a>
 		<a href="https://us14.list-manage.com/contact-form?u=c288709774c96731a04d21fa6&form_id=07bdec94bec06a1ccf2c0fd4575a9ae5" class="cursor-pointer hover:underline">CONTACT</a>
 	</div>
 	<img class="h-16 opacity-0 hidden md:block" src={Logo} alt="Stiwdio Dyfi" />
