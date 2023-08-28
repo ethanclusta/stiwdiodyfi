@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  a {
+      @apply underline
+  }
+}
+
 @font-face {
   font-family: 'Staatliches';
   src: url("/fonts/Staatliches-Regular.ttf");

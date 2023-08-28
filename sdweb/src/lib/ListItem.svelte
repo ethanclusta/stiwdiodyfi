@@ -9,7 +9,7 @@
 	const displayDate = dateTimeFormat.format(date);
 </script>
 
-<a href="/news/{item.id}" class="flex flex-col lg:flex-row gap-3 relative w-full p-5">
+<a href="/news/{item.id}" class="flex flex-col lg:flex-row gap-3 relative w-full p-5 no-underline">
     <div class="relative w-full lg:w-1/2 flex place-content-center">
         <img class="aspect-video object-cover max-h-72" src={item.feature_image} alt="feature" />
     </div>
