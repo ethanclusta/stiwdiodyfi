@@ -6,6 +6,9 @@
   a {
       @apply underline
   }
+  iframe {
+      @apply aspect-video w-full h-72
+  }
 }
 
 @font-face {
