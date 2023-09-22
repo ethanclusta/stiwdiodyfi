@@ -10,7 +10,7 @@ import About from '../../lib/About.svelte';
 
 <About article={data} />
 
-<div class="w-full flex flex-col lg:flex-row gap-3 px-5 sm:px-20 md:px-32 lg:px-56 xl:px-80">
+<div class="w-full flex flex-col lg:flex-row gap-3 px-5 sm:px-20 md:px-32 lg:px-56 xl:px-80 mt-3">
     <AboutCard text="OUR TEAM" navTo="/team" />
     <AboutCard text="ADVISORY PANEL" navTo="/advisory-panel" />
 </div>

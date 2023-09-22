@@ -8,7 +8,7 @@
 <div class="py-0">
 	<div class="text-4xl md:text-6xl font-bold text-white bg-black xl:px-16 py-1 text-center">{title}</div>
 </div>
-<div class="xl:px-12 flex flex-col gap-5 mb-5 divide-y divide-black">
+<div class="xl:px-12 flex flex-col gap-5 divide-y divide-black">
 	{#each data as item (item.id)}
 		<ListItem item={item} />
 	{/each}

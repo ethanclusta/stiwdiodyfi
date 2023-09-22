@@ -2,14 +2,37 @@
 	import '../app.css';
 	import Nav from '../lib/Nav.svelte';
 	import Logo from '$lib/assets/LOGOS8.png';
+	import { navigating } from '$app/stores';
+	import { fade } from 'svelte/transition';
+
+	$: showLoading = $navigating ? true : false;
+	const wait = () => new Promise((res) => setTimeout(res , 10))
 </script>
 
 <body class="bg-white">
-	<div class="relative h-full w-full mb-12">
+	<div class="relative h-full w-full">
 		<div class="pb-8">
 			<div class="bg-white w-full flex flex-col gap-y-5">
 				<Nav />
-				<slot />
+				{#if showLoading}
+					{#await wait()}
+						<div></div>
+					{:then a} 
+					<!-- <div class="py-0">
+						<div class="text-4xl md:text-6xl font-bold text-black bg-black xl:px-16 py-1 text-center">B</div>
+					</div> -->
+					<div class="m-10">
+						<div class="w-10 h-10 border-2 border-black flex flex-row m-auto animate-spin">
+							<div class="w-1/2 h-full bg-black" />
+							<div class="w-1/2 h-full bg-white" />
+						</div>
+					</div>
+					{/await}
+				{:else}
+					<div>
+						<slot />
+					</div>
+				{/if}
 			</div>
 		</div>
 		<div class="absolute bottom-2 right-2 text-sm text-white text-right">
@@ -48,9 +71,13 @@
 					novalidate
 				>
 					<div class="flex flex-col gap-y-4" id="mc_embed_signup_scroll">
-						<div class="indicates-required w-full text-right text-sm"><span class="asterisk text-red-500">*</span> indicates required</div>
+						<div class="indicates-required w-full text-right text-sm">
+							<span class="asterisk text-red-500">*</span> indicates required
+						</div>
 						<div class="mc-field-group flex flex-col">
-							<label for="mce-EMAIL">Email Address <span class="asterisk text-red-500">*</span> </label>
+							<label for="mce-EMAIL"
+								>Email Address <span class="asterisk text-red-500">*</span>
+							</label>
 							<input
 								type="email"
 								value=""
