@@ -30,6 +30,10 @@
 			title: 'FILM COOP CYMRU',
 			tag: 'film-coop-cymru'
 		},
+		{
+			title: 'MID WALES SCREEN NETWORK',
+			tag: 'mid-wales-screen-network'
+		},
 		// {
 		// 	title: 'SÔS COCH SINEMA',
 		// 	tag: 'soscochsinema'
