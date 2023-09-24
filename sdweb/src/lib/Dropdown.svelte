@@ -10,8 +10,6 @@
             option = '';
         } else if (e.target.id === 'arch') {
 			option = 'arch';
-		} else if (e.target.id === 'indev') {
-			option = 'indev';
 		} else if (e.target.id === 'live') {
 			option = 'live';
 		}
@@ -31,37 +29,10 @@
 			tag: 'film-coop-cymru'
 		},
 		{
-			title: 'MID WALES SCREEN NETWORK',
-			tag: 'mid-wales-screen-network'
+			title: 'SCREEN NETWORK',
+			tag: 'screen-network'
 		},
-		// {
-		// 	title: 'SÔS COCH SINEMA',
-		// 	tag: 'soscochsinema'
-		// },
 	]
-
-	// const devProjs = [
-	// 	{
-	// 		title: 'MID WALES FILM UNIT',
-	// 		tag: 'midwalesfilmunit'
-	// 	},
-	// 	{
-	// 		title: 'TRYDAN RECORDS',
-	// 		tag: 'trydanrecords'
-	// 	},
-	// 	{
-	// 		title: 'DYFI FILM FESTIVAL',
-	// 		tag: 'dyfifilmfestival'
-	// 	},
-	// 	{
-	// 		title: 'DYFI FASHION WEEK',
-	// 		tag: 'dyfifashionweek'
-	// 	},
-	// 	{
-	// 		title: 'CYW DYFI',
-	// 		tag: 'cywdyfi'
-	// 	},
-	// ]
 
 	const archProjs = [
 		{
@@ -76,14 +47,6 @@
 			title: 'MACHYNLLETH YOUTH CLUB',
 			tag: 'machynlleth-youth-club'
 		},
-		// {
-		// 	title: 'DYFI FILM SCHOOL',
-		// 	tag: 'dyfifilmschool'
-		// },
-		// {
-		// 	title: 'DIGIDOL DYFI DIGITAL',
-		// 	tag: 'digidoldyfidigital'
-		// },
 	]
 </script>
 
@@ -95,7 +58,6 @@
 	tabindex="-1"
 >
 	<div class="py-1" role="none">
-		<!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
 		<div
 			on:click={toggleExtra}
 			id="live"
@@ -106,16 +68,6 @@
 		{#if option === 'live'}
 			<SubDropdown items={liveProjs} hideFunc={hideFunc} />
 		{/if}
-		<!-- <div
-			on:click={toggleExtra}
-			id="indev"
-			class="cursor-pointer hover:underline block px-4 py-2 text-sm"
-		>
-			IN DEVELOPMENT
-		</div>
-		{#if option === 'indev'}
-			<SubDropdown items={devProjs} hideFunc={hideFunc} />
-		{/if} -->
 		<div
 			on:click={toggleExtra}
 			id="arch"
