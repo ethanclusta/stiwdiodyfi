@@ -21,6 +21,14 @@
 			tag: 'radiodyfi'
 		},
 		{
+			title: 'DIGIDOL DYFI DIGITAL',
+			tag: 'digidoldyfidigital'
+		},
+		{
+			title: 'SÔS COCH SINEMA',
+			tag: 'soscochsinema'
+		},
+		{
 			title: 'CONSULTATION',
 			tag: 'consultation'
 		},
@@ -40,12 +48,16 @@
 			tag: 'hwbffasiwnda'
 		},
 		{
-			title: 'SÔS COCH SINEMA',
-			tag: 'soscochsinema'
-		},
-		{
 			title: 'MACHYNLLETH YOUTH CLUB',
 			tag: 'machynlleth-youth-club'
+		},
+		{
+			title: 'DYFI FILM YSGOL',
+			tag: 'dyfifilmysgol'
+		},
+		{
+			title: 'POWYS LOCALITIES INITIATIVE',
+			tag: 'powyslocalitiesinitiative'
 		},
 	]
 </script>

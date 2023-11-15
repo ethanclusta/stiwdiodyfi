@@ -3,7 +3,7 @@
 	import Nav from '../lib/Nav.svelte';
 	import Logo from '$lib/assets/LOGOS8.png';
 	import { navigating } from '$app/stores';
-	import { fade } from 'svelte/transition';
+	import Partners from '../lib/Partners.svelte';
 
 	$: showLoading = $navigating ? true : false;
 	const wait = () => new Promise((res) => setTimeout(res , 10))
@@ -21,7 +21,7 @@
 					<!-- <div class="py-0">
 						<div class="text-4xl md:text-6xl font-bold text-black bg-black xl:px-16 py-1 text-center">B</div>
 					</div> -->
-					<div class="m-10">
+					<div class="fixed w-full h-screen top-0 left-0 bg-white z-10 flex place-content-center">
 						<div class="w-10 h-10 border-2 border-black flex flex-row m-auto animate-spin">
 							<div class="w-1/2 h-full bg-black" />
 							<div class="w-1/2 h-full bg-white" />
@@ -42,12 +42,13 @@
 	<div class="w-full flex flex-col-reverse md:flex-row p-5 justify-between bg-black">
 		<div class="w-full md:w-1/2 flex flex-col place-content-center gap-y-3 mt-5 md:mt-0">
 			<img class="object-contain w-1/3" src={Logo} alt="Stiwdio Dyfi" />
-			<div class="text-white text-sm px-3">
+			<div class="text-white text-xs px-3">
 				<div>Stiwdio Dyfi CIC</div>
 				<div>Company No 13843739 registered in England and Wales</div>
 				<div>205 Y Plas Aberystwyth Road Machynlleth Powys SY20 8ER United Kingdom</div>
 				<div>stiwdiodyfi@gmail.com</div>
 			</div>
+			<Partners />
 		</div>
 		<!-- Begin Mailchimp Signup Form -->
 		<style type="text/css">

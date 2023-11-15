@@ -2,13 +2,14 @@ import { error } from '@sveltejs/kit';
 import { apiKey, apiUrl } from './stores';
 import { get } from 'svelte/store';
 
-const url = get(apiUrl);
+const bgUrl = get(apiUrl);
 const key = get(apiKey);
- 
-/** @type {import('./$types').PageServerLoad} */
-export function load() {
-    async function getPost() {
-		const res = await fetch(url + key + '&filter=tag:sd-news');
+
+/** @type {import('./$types').PageLoad} */
+export async function load({ url }) {
+	const page = Number(url.searchParams.get('page')) || 1;
+	async function getPost(pg) {
+		const res = await fetch(bgUrl + key + `&filter=tag:sd-news&page=${pg}`);
 		const resJson = await res.json();
 		const posts = resJson;
 
@@ -16,8 +17,8 @@ export function load() {
 			return posts;
 		} else {
 			throw error(404, 'Not found');
-            // return res;
+			// return res;
 		}
 	}
-    return getPost();
+	return getPost(page);
 }
