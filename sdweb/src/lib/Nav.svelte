@@ -15,7 +15,7 @@
 	}
 </script>
 
-<div class="w-full flex flex-row justify-between px-3 pt-3">
+<div class="w-full flex flex-row justify-between px-3 pt-3 z-20">
 	<a href="/">
 		<img class="h-16 object-contain" src={Logo} alt="Stiwdio Dyfi" />
 	</a>
