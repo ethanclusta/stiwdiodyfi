@@ -10,8 +10,8 @@
 
 	const arrayOfPages = pagesLength(pageCount);
 
-	const selectedStyle = 'font-bold border border-black p-2';
-	const normalStyle = 'font-regular p-2';
+	const selectedStyle = 'font-bold border border-black p-2 no-underline';
+	const normalStyle = 'font-regular p-2 no-underline';
 
 	const curPath = $page.url.pathname;
 </script>
