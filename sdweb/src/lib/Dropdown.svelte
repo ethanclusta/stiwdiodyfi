@@ -29,6 +29,10 @@
 			tag: 'soscochsinema'
 		},
 		{
+			title: 'SWN DYFI SOUND',
+			tag: 'swndyfisound'
+		},
+		{
 			title: 'CONSULTATION',
 			tag: 'consultation'
 		},
