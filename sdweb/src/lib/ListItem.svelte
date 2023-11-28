@@ -15,7 +15,7 @@
     </div>
     <div class="flex flex-col gap-3 w-full lg:w-1/2 justify-center">
         <!-- <div class="text-sm">{displayDate}</div> -->
-        <div class="text-3xl">{item.title}</div>
+        <h1 class="text-3xl">{item.title}</h1>
         <div class="text-sm text-gray-700">{displayDate}</div>
         <div>{item.excerpt}...<span class="font-bold underline">read more</span></div>
     </div>
