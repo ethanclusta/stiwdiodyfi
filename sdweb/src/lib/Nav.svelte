@@ -17,9 +17,9 @@
 
 <div class="w-full flex flex-row justify-between px-3 pt-3 z-20">
 	<a href="/">
-		<img class="h-16 object-contain" src={Logo} alt="Stiwdio Dyfi" />
+		<img class="h-12 sm:h-16 object-contain" src={Logo} alt="Stiwdio Dyfi" />
 	</a>
-	<div class="flex flex-row gap-x-3 md:gap-x-5 py-4 text-lg md:text-2xl">
+	<div class="flex flex-row gap-x-3 md:gap-x-5 py-2 sm:py-4 text-lg md:text-2xl">
 		<div class="relative">
 			<div on:click={toggleDrop} class="cursor-pointer hover:underline">PROJECTS</div>
 			{#if drop}

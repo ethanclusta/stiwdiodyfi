@@ -8,6 +8,6 @@
     </div>
     <div class="flex flex-col gap-3 w-full">
         <!-- <div class="text-3xl">{article.title}</div> -->
-        <div class="flex flex-col gap-y-3">{@html article.html}</div>
+        <div class="flex flex-col gap-y-3 overflow-hidden">{@html article.html}</div>
     </div>
 </div>

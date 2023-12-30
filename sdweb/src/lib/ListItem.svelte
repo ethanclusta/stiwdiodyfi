@@ -17,6 +17,6 @@
         <!-- <div class="text-sm">{displayDate}</div> -->
         <h1 class="text-3xl">{item.title}</h1>
         <div class="text-sm text-gray-700">{displayDate}</div>
-        <div>{item.excerpt}...<span class="font-bold underline">read more</span></div>
+        <div class="overflow-hidden">{item.excerpt}...<span class="font-bold underline">read more</span></div>
     </div>
 </a>
